@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site_Default.master.cs" Inherits="TP7_GB_Ehbisse_Soufiane.Site_Default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Login</title>
+    <link href="Images/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/Styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">E-Commerce</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="SingIn.aspx">SING-IN</a></li>
+                    <li><a href="SingUp.aspx">SING-UP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="GlobalContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <br>
+        <br>
+            <p>Contact Developper <a href="mailto:ehbissesoufian@gmail.com" data-toggle="tooltip" title="Contact Developper">ehbissesoufian@gmail.com</a></p>
+    </footer>
+</body>
+</html>
